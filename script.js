@@ -4,3 +4,4 @@ var logs = "Error: Uncaught TypeError: Cannot read property 'submit' of null\n  
 // Display logs in pre element
 document.getElementById("logs").textContent = logs;
 
+// for the dark mode 
