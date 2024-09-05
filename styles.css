@@ -1,205 +1,148 @@
-/* Style the navigation bar */
-.all-browsers{
-  margin: 10px;
-  padding: 25px;
-}
-.navbar {
-    overflow: hidden;
-    background-color: #333;
-}
-  /* Style the links inside the navigation bar */
-.navbar a {
-    float: left;
-    display: block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 20px;
-    text-decoration: none;
-}
-/* Style the search form */
-.search-form {
-    float: right;
-    margin-top: 8px;
-}
-
-
-/* Style the input field */
-.search-form input[type="text"] {
-    padding: 6px;
-    margin-right: 5px;
-    border: none;
-    border-radius: 4px;
-}
-  /* Style the search button */
-.search-form button {
-    padding: 6px 10px ;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-} 
-  /* Change the color of button on hover */
-.search-form button:hover {
-    background-color: #45a049;
-}
-
-  /* Change the color of links on hover */
-.navbar a:hover {
-    background-color: #ddd;
-    color: black;
-
-}
-
-
-
-/* star form hear  */
-
-/* name header */
-
-
-body {
-  font-family: Arial, sans-serif;
+/* Reset default browser styles */
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
-
-h1, h2, h3 {
+/* Body Styling */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #1e1e1e; /* Dark background */
+  color: #ffffff; /* Light text for dark mode */
   margin: 0;
+  padding: 0;
+  line-height: 1.6;
 }
 
-.hrushi_khillari {
-  font-size: 100px;
-  font-weight:800; 
-
-}
-
-section {
+/* Container */
+.wordpad-container {
+  max-width: 1000px;
+  margin: 20px auto;
   padding: 20px;
-  margin-bottom: 20px;
+  background-color: #2c2c2c; /* Slightly lighter background for contrast */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  transition: background-color 0.3s ease;
 }
 
+/* Headers */
+h1, h2, h3 {
+  margin-bottom: 20px;
+  color: #4CAF50; /* Accent color for headings */
+}
+
+h1 {
+  font-size: 48px;
+  font-weight: bold;
+  transition: transform 0.3s ease-in-out;
+}
+
+h1:hover {
+  transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+h2 {
+  font-size: 36px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+/* Sections */
+section {
+  margin-bottom: 30px;
+}
+
+/* Lists */
 ul {
   list-style-type: none;
-  padding: 0;
+  padding-left: 20px;
 }
 
 li {
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 
-.project {
-  margin-bottom: 15px;
-}
-
-.project h3 {
-  margin-bottom: 5px;
-}
-
-
-
-/* -----------------Dark mode on off  */
-
-
-
-
-/* ---------------- dark */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-body {
-  margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
-  background-color: #000000; /* Black background color */
-  color: #ffffff; /* White text color */
-}
-
-.wordpad-container {
-  max-width: 1000px; /* Adjust width as needed */
-  margin: 0 auto;
-  padding: 20px;
-  background-color: #000000; /* Black background color */
-}
-
-.wordpad-container h1 {
-  font-size: 24px; /* WordPad-like heading font size */
-  margin-bottom: 20px; /* WordPad-like spacing between heading and paragraphs */
-}
-
-.wordpad-container p {
-  font-size: 16px; /* WordPad-like paragraph font size */
-  line-height: 1.6; /* WordPad-like line height */
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* end frome hear - footer   */
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-}
-
-.content {
-  padding: 20px;
-}
-
-footer {
+/* Navbar Styling */
+.navbar {
   background-color: #333;
-  color: #fff;
-  text-align: center;
+  overflow: hidden;
   padding: 10px 0;
 }
 
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.navbar a:hover {
+  background-color: #4CAF50;
+  color: #fff;
+}
+
+/* Search Form */
+.search-form {
+  float: right;
+  margin-top: 5px;
+}
+
+.search-form input[type="text"] {
+  padding: 8px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 4px;
+}
+
+.search-form button {
+  padding: 8px 12px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.search-form button:hover {
+  background-color: #45a049;
+}
+
+/* Project Styling */
+.project {
+  background-color: #383838; /* Slight contrast */
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.project:hover {
+  background-color: #444;
+  transform: scale(1.02); /* Slight zoom effect on hover */
+}
+
+.project h3 {
+  color: #4CAF50; /* Accent color for project titles */
+}
+
+/* Footer Styling */
+footer {
+  background-color: #222;
+  color: #ccc;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 40px;
 }
 
 footer p {
-  margin: 0;
+  margin-bottom: 10px;
 }
 
 .social-icons {
@@ -207,46 +150,112 @@ footer p {
 }
 
 .social-icons a {
+  margin: 0 10px;
   display: inline-block;
-  margin: 0 5px;
+  transition: transform 0.3s;
+}
+
+.social-icons a:hover {
+  transform: scale(1.2); /* Enlarges social icons on hover */
 }
 
 .social-icons img {
-  width: 30px; /* Adjust size as needed */
-  height: auto;
+  width: 30px;
+  height: 30px;
 }
 
+/* Scroll Indicator */
+.scroll-arrow {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #4CAF50;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
 
+.scroll-arrow:hover {
+  background-color: #45a049;
+  transform: scale(1.1); /* Slight zoom effect on hover */
+}
 
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+    text-align: left;
+    padding-left: 20px;
+  }
 
+  .search-form {
+    float: none;
+    text-align: left;
+    margin-top: 15px;
+  }
 
+  .search-form input[type="text"], .search-form button {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
 
+  /* Responsive scroll arrow */
+  .scroll-arrow {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 20px;
+  }
+}
 
+/* Improved readability for long text blocks */
+.wordpad-container p {
+  margin-bottom: 15px;
+  line-height: 1.8;
+}
 
+/* Styling for links */
+a {
+  color: #4CAF50;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
 
+a:hover {
+  text-decoration: underline;
+  color: #45a049;
+}
 
+.container {
+  text-align: center;
+  margin-top: 40px;
+}
 
+.container p {
+  color: #ccc;
+  margin-bottom: 10px;
+}
 
+.social-icons a {
+  margin: 0 10px;
+  display: inline-block;
+  transition: transform 0.3s;
+}
 
+.social-icons a:hover {
+  transform: scale(1.2); /* Enlarges social icons on hover */
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.social-icons img {
+  width: 30px;
+  height: 30px;
+}
