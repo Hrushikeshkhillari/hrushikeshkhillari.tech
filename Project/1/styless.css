@@ -115,16 +115,12 @@ li {
 }
 
 /* Project Styling */
-/* Project Styling */
 .project {
   background-color: #383838; /* Slight contrast */
   padding: 20px;
   border-radius: 8px;
   margin-bottom: 20px;
   transition: background-color 0.3s, transform 0.3s;
-  display: flex; /* Use Flexbox for layout */
-  justify-content: space-between; /* Space between items */
-  align-items: center; /* Align items vertically centered */
 }
 
 .project:hover {
@@ -135,42 +131,6 @@ li {
 .project h3 {
   color: #4CAF50; /* Accent color for project titles */
 }
-
-.project p {
-  max-width: 60%; /* Limit paragraph width */
-  color: #fff; /* Text color for better readability */
-}
-
-.project-image {
-  max-width: 200px; /* Set maximum width for the image */
-  height: auto; /* Maintain aspect ratio */
-  margin-left: 20px; /* Space between text and image */
-}
-
-.names-column ul {
-  list-style-type: none; /* Remove bullet points */
-  padding: 0;
-  display: flex; /* Display items in a row */
-  gap: 20px; /* Add some spacing between the names */
-}
-
-.names-column ul li {
-  padding: 3px 20px;
-  border-radius: 30px; /* Make the border round */
-  border: 2px solid #ccc; /* Border around the name */
-  text-align: center;
-  margin-top: 10px;
-  
-}
-
-
-
-
-
-
-
-
-
 
 /* Footer Styling */
 footer {

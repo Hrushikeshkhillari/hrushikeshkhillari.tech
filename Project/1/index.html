@@ -1,0 +1,852 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="font.css" />
+    <link rel="stylesheet" href="output.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="./matter.js" defer></script>
+    <script src="darkandlight.js" defer></script>
+
+    <link rel="icon" type="image/png" href="assets/images/Tab Logo.png">
+  </head>
+  <body class="bg-[#111] text-white font-['Nunito']">
+    <section class="flex flex-col justify-between h-screen">
+      <header
+        class="z-10 pointer-events-none flex items-center justify-between w-full px-4 mt-4 max-w-screen-xl mx-auto"
+      >
+            <svg
+            
+            width="70"
+            height="70"
+            viewBox="0 0 406 368"
+            xmlns="http://www.w3.org/2000/svg"
+            >
+            <!-- Replace the path with an image -->
+            <image
+                href="assets/images/Chinnal Profile.png"
+                x="0"
+                y="0"
+                width="120%"
+                height="120%"
+            />
+            </svg>
+    
+        <div class="flex gap-4 pointer-events-auto">
+          <!-- Sun icon (Light mode) -->
+<svg
+xmlns="http://www.w3.org/2000/svg"
+width="24"
+height="24"
+viewBox="0 0 24 24"
+fill="none"
+stroke="currentColor"
+stroke-width="2"
+stroke-linecap="round"
+stroke-linejoin="round"
+class="feather-sun icon"
+id="sunIcon"
+>
+<circle cx="12" cy="12" r="5"></circle>
+<line x1="12" y1="1" x2="12" y2="3"></line>
+<line x1="12" y1="21" x2="12" y2="23"></line>
+<line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+<line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+<line x1="1" y1="12" x2="3" y2="12"></line>
+<line x1="21" y1="12" x2="23" y2="12"></line>
+<line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+<line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+</svg>
+
+<!-- Moon icon (Dark mode) -->
+<svg
+xmlns="http://www.w3.org/2000/svg"
+width="24"
+height="24"
+viewBox="0 0 24 24"
+fill="none"
+stroke="currentColor"
+stroke-width="2"
+stroke-linecap="round"
+stroke-linejoin="round"
+class="feather-moon icon hidden"
+id="moonIcon"
+>
+<path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+</svg>
+
+         <!---- <a href="tel:9824989238"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="feather feather-phone"
+            >
+              <path
+                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+              ></path></svg></a>
+          <a
+            href="https://wa.me/9824989238?text=Hi, How are you?"
+            target="_blank"
+          >
+            <svg
+              aria-hidden="true"
+              focusable="false"
+              data-prefix="fab"
+              data-icon="whatsapp"
+              class="svg-inline--fa fa-whatsapp fa-w-14"
+              role="img"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 448 512"
+            >
+              <path
+                fill="currentColor"
+                d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"
+              ></path>
+            </svg>  -->
+          </a>
+        </div>
+      </header>
+      <div class="absolute inset-0 hidden md:block" id="wrapper-canvas"></div>
+      <div class="flex -mt-10 relative">
+        <div class="w-full px-4 max-w-screen-xl mx-auto">
+          <svg
+            viewBox="0 0 406 368"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            class="pointer-events-none absolute top-0 left-1/2 -translate-y-[80px] sm:-translate-y-[180px] -translate-x-1/2 w-[300px] sm:w-[400px] md:w-[650px]"
+          >
+          
+                <!-- Replace the path with an image -->
+                <image
+                href="assets/images/Chinnal Profile.png"
+                x="0"
+                y="0"
+                width="110%"
+                height="110%"
+            />
+            <defs>
+              <linearGradient
+                id="paint0_linear"
+                x1="205.549"
+                y1="20.0169"
+                x2="204.338"
+                y2="342.461"
+                gradientUnits="userSpaceOnUse"
+              >
+                <stop stop-color="#1595B6" />
+                <stop offset="1" stop-color="#1595B6" stop-opacity="0" />
+              </linearGradient>
+            </defs>
+          </svg>
+          <div class="relative ml-4 md:ml-12">
+            <h1
+              class="pointer-events-none text-4xl md:text-[64px] font-['Spartan'] mr-12"
+            >
+              Rishi Patil
+            </h1>
+            <p
+              class="pointer-events-none font-['Merriweather'] italic my-4 md:my-8"
+            >
+              Gaming TLRP RP 
+            </p>
+            <button
+              class="bg-[#4595eb] py-2 px-5 rounded font-extrabold bg-gradient-to-l from-[#1595b6] to-[#1f2667e6] relative hover:scale-110 ease-in-out duration-100 group"
+              onclick="window.location.href = 'https://www.youtube.com/@rushipatillive'"
+            >
+              About Me
+
+              <svg
+                xmlns:dc="http://purl.org/dc/elements/1.1/"
+                xmlns:cc="http://creativecommons.org/ns#"
+                xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                xmlns:svg="http://www.w3.org/2000/svg"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+                xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+                version="1.1"
+                x="0px"
+                y="0px"
+                width="44"
+                height="44"
+                viewBox="0 0 100 100"
+                class="absolute top-1/2 -translate-y-1/2 -right-7 group-hover:-right-8 ease-in-out duration-100"
+              >
+                <g transform="translate(0,-952.36218)">
+                  <path
+                    style="
+                      text-indent: 0;
+                      text-transform: none;
+                      direction: ltr;
+                      block-progression: tb;
+                      baseline-shift: baseline;
+                      color: #ffffff;
+                      enable-background: accumulate;
+                    "
+                    d="m 88.999835,1002.3621 c 0,-0.4628 -0.2799,-1.0773 -0.5639,-1.3755 l -15.9997,-17.00026 c -0.747,-0.7723 -1.9572,-0.8618 -2.8281,-0.078 -0.7786,0.7007 -0.798,2.0673 -0.078,2.8282 l 12.8435,13.62516 -69.37347,0 c -1.1046,0 -2,0.8954 -2,2 0,1.1046 0.8954,2.0001 2,2.0001 l 69.37347,0 -12.8435,13.6252 c -0.7199,0.7608 -0.6688,2.0938 0.078,2.8281 0.7885,0.7752 2.0925,0.7062 2.8281,-0.078 l 15.9997,-17.0002 c 0.4701,-0.4611 0.556,-0.9052 0.5639,-1.3748 z"
+                    fill="#fff"
+                    fill-opacity="1"
+                    stroke="white"
+                    stroke-width="2"
+                    marker="none"
+                    visibility="visible"
+                    display="inline"
+                    overflow="visible"
+                  />
+                </g>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <ul class="ml-auto space-y-6 text-[#b0b2c3] absolute right-8">
+          <li>
+            <a
+              href="https://www.linkedin.com/in/hrushikesh-khillari-79074128b/"
+              target="_blank"
+            >
+              <svg
+                class="w-7 hover:text-white"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 448 512"
+              >
+                <path
+                  fill="currentColor"
+                  d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3zM447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z"
+                />
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://discord.gg/TAcfTc5a" target="_blank">
+              <svg
+                class="w-7 hover:text-white"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 610 512"
+              >
+                <path
+                  fill="currentColor"
+                  d="M524.5 69.8a1.5 1.5 0 0 0 -.8-.7A485.1 485.1 0 0 0 404.1 32a1.8 1.8 0 0 0 -1.9 .9 337.5 337.5 0 0 0 -14.9 30.6 447.8 447.8 0 0 0 -134.4 0 309.5 309.5 0 0 0 -15.1-30.6 1.9 1.9 0 0 0 -1.9-.9A483.7 483.7 0 0 0 116.1 69.1a1.7 1.7 0 0 0 -.8 .7C39.1 183.7 18.2 294.7 28.4 404.4a2 2 0 0 0 .8 1.4A487.7 487.7 0 0 0 176 479.9a1.9 1.9 0 0 0 2.1-.7A348.2 348.2 0 0 0 208.1 430.4a1.9 1.9 0 0 0 -1-2.6 321.2 321.2 0 0 1 -45.9-21.9 1.9 1.9 0 0 1 -.2-3.1c3.1-2.3 6.2-4.7 9.1-7.1a1.8 1.8 0 0 1 1.9-.3c96.2 43.9 200.4 43.9 295.5 0a1.8 1.8 0 0 1 1.9 .2c2.9 2.4 6 4.9 9.1 7.2a1.9 1.9 0 0 1 -.2 3.1 301.4 301.4 0 0 1 -45.9 21.8 1.9 1.9 0 0 0 -1 2.6 391.1 391.1 0 0 0 30 48.8 1.9 1.9 0 0 0 2.1 .7A486 486 0 0 0 610.7 405.7a1.9 1.9 0 0 0 .8-1.4C623.7 277.6 590.9 167.5 524.5 69.8zM222.5 337.6c-29 0-52.8-26.6-52.8-59.2S193.1 219.1 222.5 219.1c29.7 0 53.3 26.8 52.8 59.2C275.3 311 251.9 337.6 222.5 337.6zm195.4 0c-29 0-52.8-26.6-52.8-59.2S388.4 219.1 417.9 219.1c29.7 0 53.3 26.8 52.8 59.2C470.7 311 447.5 337.6 417.9 337.6z"
+ 
+
+                />
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/hrushi_khillari/">
+              <svg
+                class="w-7 hover:text-white"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 448 512"
+              >
+                <path
+                  fill="currentColor"
+                  d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
+                />
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="mailto:hrushikhillari@gmail.com" target="_blank">
+              <svg
+                class="w-7 hover:text-white"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 512 512"
+              >
+                <path
+                  fill="currentColor"
+                  d="M64 112c-8.8 0-16 7.2-16 16v22.1L220.5 291.7c20.7 17 50.4 17 71.1 0L464 150.1V128c0-8.8-7.2-16-16-16H64zM48 212.2V384c0 8.8 7.2 16 16 16H448c8.8 0 16-7.2 16-16V212.2L322 328.8c-38.4 31.5-93.7 31.5-132 0L48 212.2zM0 128C0 92.7 28.7 64 64 64H448c35.3 0 64 28.7 64 64V384c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128z"
+                />
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.youtube.com/@rushipatillive">
+              <svg
+                class="w-7 hover:text-white"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 576 512"
+                fill="currentColor"
+              >
+                <path
+                  d="M549.7 124.1c-6.3-23.7-24.8-42.3-48.3-48.6C458.8 64 288 64 288 64S117.2 64 74.6 75.5c-23.5 6.3-42 24.9-48.3 48.6-11.4 42.9-11.4 132.3-11.4 132.3s0 89.4 11.4 132.3c6.3 23.7 24.8 41.5 48.3 47.8C117.2 448 288 448 288 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3zm-317.5 213.5V175.2l142.7 81.2-142.7 81.2z"
+                />
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div
+        class="relative self-center after:content-[''] after:absolute after:w-[2px] after:h-5 after:bg-[#444] after:left-1/2 after:-translate-x-1/2 after:top-[100px]"
+      >
+        <button
+          class="bg-[#4595eb] py-2 px-5 rounded font-extrabold bg-gradient-to-l from-[#1595b6] to-[#1f2667e6] relative hover:scale-110 ease-in-out duration-100 group mb-20"
+        >
+           Go
+
+          <svg
+            xmlns:dc="http://purl.org/dc/elements/1.1/"
+            xmlns:cc="http://creativecommons.org/ns#"
+            xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+            xmlns:svg="http://www.w3.org/2000/svg"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+            xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+            version="1.1"
+            x="0px"
+            y="0px"
+            width="44"
+            height="44"
+            viewBox="0 0 100 100"
+            class="absolute rotate-90 left-1/2 -translate-x-1/2 top-11 group-hover:top-12 ease-in-out duration-100"
+          >
+            <g transform="translate(0,-952.36218)">
+              <path
+                style="
+                  text-indent: 0;
+                  text-transform: none;
+                  direction: ltr;
+                  block-progression: tb;
+                  baseline-shift: baseline;
+                  color: #2a47eb;
+                  enable-background: accumulate;
+                "
+                d="m 88.999835,1002.3621 c 0,-0.4628 -0.2799,-1.0773 -0.5639,-1.3755 l -15.9997,-17.00026 c -0.747,-0.7723 -1.9572,-0.8618 -2.8281,-0.078 -0.7786,0.7007 -0.798,2.0673 -0.078,2.8282 l 12.8435,13.62516 -69.37347,0 c -1.1046,0 -2,0.8954 -2,2 0,1.1046 0.8954,2.0001 2,2.0001 l 69.37347,0 -12.8435,13.6252 c -0.7199,0.7608 -0.6688,2.0938 0.078,2.8281 0.7885,0.7752 2.0925,0.7062 2.8281,-0.078 l 15.9997,-17.0002 c 0.4701,-0.4611 0.556,-0.9052 0.5639,-1.3748 z"
+                fill="#fff"
+                fill-opacity="1"
+                stroke="white"
+                stroke-width="2"
+                marker="none"
+                visibility="visible"
+                display="inline"
+                overflow="visible"
+              />
+            </g>
+          </svg>
+        </button>
+      </div>
+    </section>
+
+
+
+   <!---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+    <section class="max-w-screen-xl mx-auto px-4 relative pb-8 sm:pb-16">
+        <h2
+          class="text-3xl sm:text-[40px] bg-[#111] relative z-10 font-bold px-4 py-2 w-max mx-auto text-center text-[#1788ae] sm:border-b-2 border-[#1788ae]"
+        >
+        Description
+        </h2>
+        <div
+          class="flex flex-col sm:flex-row gap-4 mt-8 sm:gap-[80px] items-center sm:mt-20 relative"
+        >
+          <div
+            class="h-[1px] left-1/4 right-1/2 bg-[#1788ae] absolute top-1/2 hidden sm:block"
+          ></div>
+          <div
+            class="w-4 h-4 rounded-full border-[3px] border-[#459bd5] absolute left-1/2 -translate-x-1/2 bg-[#111] z-10 hover:scale-110 ease-in-out duration-100 hidden sm:block"
+          ></div>
+          <a
+            href="https://store.lenovo.com/in/en/ideapad-gaming-3-39-62cms-amd-ryzen-7-82k201ukin-321-1.html?orgRef=https%253A%252F%252Fwww.youtube.com%252F"
+            class="flex w-full relative justify-center sm:justify-start"
+          >
+            <div
+              class="flex flex-col items-center relative group sm:hover:scale-105 ease-in-out duration-200"
+            >
+              <img
+                class="max-w-[400px] w-full mr-auto relative z-10 drop-shadow-[0_0px_60px_rgba(59,130,246,0.6)]"
+                src="assets/images/Lenovo.avif"
+                alt=""
+              />
+              <span
+                class="flex group-hover:-top-14 ease-jump duration-200 bg-[#459bd5] sm:absolute left-1/2 sm:-translate-x-1/2 top-5 px-2 py-1 text-sm sm:text-base mt-2 rounded w-max items-center gap-1 after:hidden sm:after:block after:w-4 after:h-4 after:bg-inherit after:absolute after:left-1/2 after:-translate-x-1/2 after:rotate-45 after:-bottom-2"
+                >Lenovo
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="feather feather-external-link"
+                >
+                  <path
+                    d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                  ></path>
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+              </span>
+            </div>
+          </a>
+  
+          <div class="w-full">
+            <h3 class="text-[#459bd5] font-bold text-2xl md:text-4xl">
+              Lenovo Idea Pad Gaming 3
+            </h3>
+            <span class="text-[#459bd5] text-base md:text-lg"
+              >(Gaming)</span
+            >
+            <p class="text-justify text-sm md:text-base mt-2">
+              The Lenovo IdeaPad Gaming 3 features a 15.6" FHD display, AMD Ryzen 7 5800H, 16 GB RAM, 512 GB SSD, and an NVIDIA RTX 3050 GPU​
+            </p>
+  
+            <ul class="flex flex-wrap gap-2 mt-2">
+              <li
+                class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base"
+              >
+              AMD Ryzen™ 7 5800H
+              </li>
+              <li
+                class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base"
+              >
+              8 GB SO-DIMM DDR4 3200MHz
+              </li>
+              <li
+                class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base"
+              >
+              Windows 11 Home 64
+              </li>
+              <li
+                class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base"
+              >
+              170W Slim Tip
+              </li>
+              <li
+                class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base"
+              >
+              Office Home and Student 2021
+              </li>
+              <li
+                class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base"
+              >
+              3 cell, 45Wh, Upto 5 hours
+              </li>
+              <li
+                class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base"
+              >
+              NVIDIA GeForce® RTX™ 3050 4GB GDDR6
+              </li>
+              <li
+                class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base"
+              >
+              512 GB SSD PCIe Gen3/4
+              </li>
+              <li
+                class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base"
+              >
+              2.2 Kgs
+              </li>
+            </ul>
+          </div>
+        </div>
+  
+        <div
+          class="flex flex-col sm:flex-row gap-4 mt-12 sm:gap-[80px] items-center sm:mt-20 relative"
+        >
+          <div class="order-2 sm:order-1 w-full">
+            <h3 class="text-[#ffe578] font-bold text-2xl md:text-4xl">
+              ViewSonic
+            </h3>
+            <span class="text-[#ffe578] text-base md:text-lg"
+              >(Portable Touch Monitor)</span
+            >
+            <p class="text-justify text-sm md:text-base mt-2">
+              The ViewSonic TD1655 is a portable 15.6" FHD touch monitor, ideal for productivity with its lightweight design, dual USB-C ports, and 1920x1080 resolution.
+            </p>
+  
+            <ul class="flex flex-wrap gap-2 mt-2">
+              <li
+                class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base"
+              >
+              ViewSonic
+              </li>
+              <li
+                class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base"
+              >
+              2-Type-C
+              </li>
+              <li
+                class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base"
+              >
+              Mini HDMI
+              </li>
+              <li
+                class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base"
+              >
+              Speaker
+              </li>
+              <li
+                class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base"
+              >
+              940 Grms
+              </li>
+              <li
+                class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base"
+              >
+              6.1 mm
+              </li>
+              <li
+                class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base"
+              >
+              Pivot-able Display
+              </li>
+              <li
+                class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base"
+              >
+              Kick Stand
+              </li>
+            </ul>
+          </div>
+          <div
+            class="h-[1px] left-1/2 right-1/4 bg-[#1788ae] absolute top-1/2 hidden sm:block"
+          ></div>
+          <div
+            class="w-4 h-4 rounded-full border-[3px] border-[#ffe578] absolute left-1/2 -translate-x-1/2 bg-[#111] z-10 hover:scale-110 ease-in-out duration-100 hidden sm:block"
+          ></div>
+          <a
+
+          href="https://www.amazon.in/dp/B08778F756?ref=ppx_yo2ov_dt_b_product_details&th=1"
+            class="order-1 sm:order-2 flex w-full relative justify-center sm:justify-start"
+          >
+            <div
+              class="flex flex-col items-center relative group sm:hover:scale-105 ease-in-out duration-200 sm:ml-auto"
+            >
+              <img
+                class="max-w-[400px] w-full relative z-10 drop-shadow-[0_0px_60px_rgba(59,130,246,0.6)]"
+                src="./assets/images/ViewSonic.png"
+                style="height: 200%;"
+                alt=""
+              />
+              <span
+                class="flex group-hover:-top-14 ease-jump duration-200 text-black bg-[#ffe578] sm:absolute left-1/2 sm:-translate-x-1/2 top-5 px-2 py-1 text-sm sm:text-base mt-2 rounded w-max items-center gap-1 after:hidden sm:after:block after:w-4 after:h-4 after:bg-inherit after:absolute after:left-1/2 after:-translate-x-1/2 after:rotate-45 after:-bottom-2"
+                >ViewSonic
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="feather feather-external-link"
+                >
+                  <path
+                    d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                  ></path>
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+              </span>
+            </div>
+          </a>
+        </div>
+        <div
+          class="flex flex-col sm:flex-row gap-4 mt-12 sm:gap-[80px] items-center sm:mt-20 relative"
+        >
+          <div
+            class="h-[1px] left-1/4 right-1/2 bg-[#1788ae] absolute top-1/2 hidden sm:block"
+          ></div>
+          <div
+            class="w-4 h-4 rounded-full border-[3px] border-[#fc815c] absolute left-1/2 -translate-x-1/2 bg-[#111] z-10 hover:scale-110 ease-in-out duration-100 hidden sm:block"
+          ></div>
+          <a
+            href="https://www.amazon.in/HyperX-Cloud-Gaming-Headset-Xbox/dp/B00SAYCVTQ/ref=sr_1_1?crid=2HOC2GKT8JSTF&dib=eyJ2IjoiMSJ9.FcCQ55nzz7aL3ScNvx6rgr4OlIhAkHdW2mB3wkaCsp-hKN0HhKr5w33fgKSNudxLbuEY7Yp4Pt0RYCF75LQ6C9mWUStUMEA41CpvCNyoxO0IsS78BlFX2JbTMuhDQimXnf5mQTCdllbWdncUNoOl4lmrymIXB0UqrnxrqNb_tWowoQWCb2MXi0zZ3h0H6AOPemY9orGSkr_2dar0CB2yT44E4pRR3k7P3AZ-9hhEmM0d9c16Ss0FoCTUxznq429WbgrAZPaVsxh8XR15uto7tdSKko8MHCW7mlY2bZZb8LY.6tT1Or4w9WEwEQidpNaSpmlf5WbADB5pH0_NRVwDrTQ&dib_tag=se&keywords=Hyper%2BX%2BCloud%2BII%2B%E2%80%93%2BGaming%2BHeadset%2Bfor%2BPC&nsdOptOutParam=true&qid=1727164306&s=computers&sprefix=hyper%2Bx%2Bcloud%2Bii%2Bgaming%2Bheadset%2Bfor%2Bpc%2Ccomputers%2C220&sr=1-1&th=1"
+            class="flex w-full relative justify-center sm:justify-start"
+          >
+            <div
+              class="flex flex-col items-center relative group hover:scale-105 ease-in-out sm:mr-auto duration-200"
+            >
+              <img
+                class="max-w-[400px] w-full mr-auto relative z-10 drop-shadow-[0_0px_60px_rgba(59,130,246,0.6)]"
+                src="./assets/images/Headset.png"
+                alt=""
+              />
+              <span
+                class="flex group-hover:-top-14 ease-jump duration-200 bg-[#fc815c] sm:absolute left-1/2 sm:-translate-x-1/2 top-5 px-2 py-1 text-sm sm:text-base mt-2 rounded w-max items-center gap-1 after:hidden sm:after:block after:w-4 after:h-4 after:bg-inherit after:absolute after:left-1/2 after:-translate-x-1/2 after:rotate-45 after:-bottom-2"
+                >HyperX Cloud II 
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="feather feather-external-link"
+                >
+                  <path
+                    d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                  ></path>
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+              </span>
+            </div>
+          </a>
+  
+          <div class="w-full">
+            <h3 class="text-[#fc815c] font-bold text-2xl md:text-4xl">
+              HyperX Cloud II
+            </h3>
+            <span class="text-[#fc815c] text-base md:text-lg"
+              >(Headset)</span
+            >
+            <p class="text-justify text-sm md:text-base mt-2">
+              HyperX Cloud II – Gaming Headset for PC, PS5 / PS4. Includes 7.1 Virtual Surround Sound and USB Audio Control Box - Gun Metal
+            </p>
+  
+            <ul class="flex flex-wrap gap-2 mt-2">
+              <li
+                class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base"
+              >
+              PC
+              </li>
+              <li
+                class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base"
+              >
+              PS5
+              </li>
+              <li
+                class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base"
+              >
+              PS4.
+              </li>
+              <li
+                class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base"
+              >
+              USB Audio Control Box
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div
+          class="flex flex-col sm:flex-row gap-4 mt-12 sm:gap-[80px] items-center sm:mt-20 relative"
+        >
+          <div class="order-2 sm:order-1 w-full">
+            <h3 class="text-[#47afa1] font-bold text-2xl md:text-4xl">
+              EvoFox Blaze Programmable
+            </h3>
+            <span class="text-[#47afa1] text-base md:text-lg"
+              >(Mouse)</span
+            >
+            <p class="text-justify text-sm md:text-base mt-2">
+              EvoFox Blaze Programmable Gaming Mouse with 1000Hz Polling Rate | Ultra-Responsive 7000fps | Gaming Grade Sensitive DPI Upto 12800 | RGB Lights with Music sync Mode | Windows Software.
+            </p>
+  
+            <ul class="flex flex-wrap gap-2 mt-2">
+              <li
+                class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base"
+              >
+              1000Hz Polling Rate
+              </li>
+              <li
+                class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base"
+              >
+              7000fps
+              </li>
+              <li
+                class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base"
+              >
+              DPI Upto 12800
+              </li>
+              
+            </ul>
+          </div>
+          <div
+            class="h-[1px] left-1/2 right-1/4 bg-[#1788ae] absolute top-1/2 hidden sm:block"
+          ></div>
+          <div
+            class="w-4 h-4 rounded-full border-[3px] border-[#47afa1] absolute left-1/2 -translate-x-1/2 bg-[#111] z-10 hover:scale-110 ease-in-out duration-100 hidden sm:block"
+          ></div>
+          <a
+            href="https://www.amazon.in/EvoFox-Programmable-Ultra-Responsive-Sensitive-Software/dp/B0CLS6F44T?th=1"
+            class="order-1 sm:order-2 flex w-full relative justify-center sm:justify-start"
+          >
+            <div
+              class="flex flex-col items-center relative group sm:hover:scale-105 ease-in-out duration-200 sm:ml-auto"
+            >
+              <img
+                class="max-w-[400px] w-full relative z-10 drop-shadow-[0_0px_60px_rgba(59,130,246,0.6)]"
+                src="./assets/images/mouse.png"
+                alt=""
+              />
+              <span
+                class="flex group-hover:-top-14 ease-jump duration-200 bg-[#47afa1] sm:absolute left-1/2 sm:-translate-x-1/2 top-5 px-2 py-1 text-sm sm:text-base mt-2 rounded w-max items-center gap-1 after:hidden sm:after:block after:w-4 after:h-4 after:bg-inherit after:absolute after:left-1/2 after:-translate-x-1/2 after:rotate-45 after:-bottom-2"
+                >EvoFox-Programmable-Ultra-Responsive-Sensitive-Software
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="feather feather-external-link"
+                >
+                  <path
+                    d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                  ></path>
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+              </span>
+            </div>
+          </a>
+        </div>
+        <div
+          class="flex flex-col sm:flex-row gap-4 mt-12 sm:gap-[80px] items-center sm:mt-20 relative"
+        >
+          <div
+            class="h-[1px] left-1/4 right-1/2 bg-[#1788ae] absolute top-1/2 hidden sm:block"
+          ></div>
+          <div
+            class="w-4 h-4 rounded-full border-[3px] border-[#fc815c] absolute left-1/2 -translate-x-1/2 bg-[#111] z-10 hover:scale-110 ease-in-out duration-100 hidden sm:block"
+          ></div>
+          <a
+            href="https://www.amazon.in/dp/B08F82B7LJ?ref=ppx_yo2ov_dt_b_fed_asin_title&th=1"
+            class="flex w-full relative justify-center sm:justify-start"
+          >
+            <div
+              class="flex flex-col items-center relative group hover:scale-105 ease-in-out sm:mr-auto duration-200"
+            >
+              <img
+                class="max-w-[400px] w-full mr-auto relative z-10 drop-shadow-[0_0px_60px_rgba(59,130,246,0.6)]"
+                src="./assets/images/mic.png"
+                alt=""
+              />
+              <span
+                class="flex group-hover:-top-14 ease-jump duration-200 bg-[#fc815c] sm:absolute left-1/2 sm:-translate-x-1/2 top-5 px-2 py-1 text-sm sm:text-base mt-2 rounded w-max items-center gap-1 after:hidden sm:after:block after:w-4 after:h-4 after:bg-inherit after:absolute after:left-1/2 after:-translate-x-1/2 after:rotate-45 after:-bottom-2"
+                >Blue Microphones Yeti
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="feather feather-external-link"
+                >
+                  <path
+                    d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                  ></path>
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+              </span>
+            </div>
+          </a>
+  
+          <div class="w-full">
+            <h3 class="text-[#fc815c] font-bold text-2xl md:text-4xl">
+              Blue Microphones Yeti
+            </h3>
+            <span class="text-[#fc815c] text-base md:text-lg"
+              >(Microphone)</span
+            >
+            <p class="text-justify text-sm md:text-base mt-2">
+              Blue Microphones Yeti USB Microphone for Recording,Streaming,Gaming,Podcasting On Pc and Mac,Condenser Mic for Laptop Or Computer with Blue Vo!Ce Effects,Adjustable Stand,Plug and Play - Blackout
+            </p>
+  
+            <ul class="flex flex-wrap gap-2 mt-2">
+              <li
+                class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base"
+              >
+              Recording
+              </li>
+              <li
+                class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base"
+              >
+              Streaming
+              </li>
+              <li
+                class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base"
+              >
+              Gaming
+              </li>
+              <li
+                class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base"
+              >
+              Podcasting On Pc
+              </li>
+              <li
+                class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base"
+              >
+              Adjustable Stand,Plug and Play
+              </li>
+              
+            </ul>
+          </div>
+        </div>
+        <div
+          class="w-[2px] hidden sm:block bg-[#1788ae] absolute top-0 bottom-0 left-1/2 -translate-x-1/2"
+        ></div>
+      </section>
+      <section class="max-w-screen-xl mx-auto pb-12">
+        <h2
+          class="text-3xl sm:text-[40px] bg-[#111] sm:w-max relative z-10 font-bold px-4 py-2 mx-auto text-center text-[#1788ae] sm:border-2 border-[#1788ae] rounded-md"
+        >
+        Streaming Start
+        </h2>
+        <div class="swiper mySwiper !py-14">
+          <div class="swiper-wrapper items-center">
+            <div class="swiper-slide px-4">
+              <div
+                class="flex flex-col md:flex-row w-full md:max-w-[950px] items-center rounded-lg p-9 shadow-[0_0px_50px_rgba(59,130,246,0.6)] cursor-grab"
+              >
+                <img
+                  class="shrink-0 w-[150px] h-[150px] md:w-[180px] md:h-[180px] rounded-full drop-shadow-[0_0px_80px_rgba(59,130,246,1)]"
+                  src="/assets/images/Chinnal Profile.png"
+                  alt="testimonial 3"
+                />
+                <div
+                  class="testimonial-text ml-6 text-left pt-6 md:pt-16 relative"
+                >
+                  <p class="text-sm md:text-base mb-2">
+                    “As Officer Rishi Patil of TLRP, he maintains a calm but authoritative presence, always ready to keep the peace in any chaotic situation. With a firm tone, he addresses the crowd, ensuring they follow his instructions to avoid any harm. Rishi takes control of tense scenarios with professionalism, clearing out areas under investigation and expecting full cooperation from everyone involved. Having seen plenty of disorder in his career, he believes that working together with the public is the key to resolving any situation without unnecessary conflict.”
+                  </p>
+                  <h2
+                    class="text-right text-[#459bd5] font-bold text-4xl md:text-6xl"
+                  >
+                    Rishi Patil
+                  </h2>
+                  <h5 class="text-right text-[#459bd5] text-base md:text-lg">
+                    Officer
+                  </h5>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </section>
+  
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.12.0/matter.min.js"></script>
+    <script src="https://cdn/jsdelivr.net/npm/matter-wrap@0.2.0/build/matter-wrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/matter-attractors@0.1.6/build/matter-attractors.min.js"></script>
+  </body>
+  </html>
