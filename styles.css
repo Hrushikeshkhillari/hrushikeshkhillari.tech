@@ -1,35 +1,35 @@
-/* Reset default browser styles */
+/* Reset default browser styles -----------------------------------------*/
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Body Styling */
+/* Body Styling -------------------------------------------------------*/
 body {
   font-family: 'Arial', sans-serif;
-  background-color: #1e1e1e; /* Dark background */
-  color: #ffffff; /* Light text for dark mode */
+  background-color: #222831;
+  color: #ffffff;
   margin: 0;
   padding: 0;
   line-height: 1.6;
 }
 
-/* Container */
+/* Container -----------------------------------------------------------*/
 .wordpad-container {
-  max-width: 1000px;
-  margin: 20px auto;
+  max-width: 1100px;
+  margin: auto auto ;
   padding: 20px;
-  background-color: #2c2c2c; /* Slightly lighter background for contrast */
+  background-color: #31363F;
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: background-color 0.3s ease;
 }
 
-/* Headers */
+/* Headers ---------------------------------------------------------------*/
 h1, h2, h3 {
   margin-bottom: 20px;
-  color: #4CAF50; /* Accent color for headings */
+  color: #40A2D8;
 }
 
 h1 {
@@ -39,23 +39,36 @@ h1 {
 }
 
 h1:hover {
-  transform: scale(1.05); /* Slight zoom effect on hover */
+  transform: scale(1.05);
 }
 
 h2 {
   font-size: 36px;
+  color: #76ABAE;
 }
 
 h3 {
   font-size: 24px;
+  color: #EEEEEE;
 }
 
-/* Sections */
+/* Date Styling for each section (top-right corner) -----------------------*/
 section {
+  position: relative;
   margin-bottom: 30px;
+  padding-right: 50px;
 }
 
-/* Lists */
+.section-date {
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: #ccc;
+  font-size: 14px;
+  font-style: italic;
+}
+
+/* Lists ------------------------------------------------------------------*/
 ul {
   list-style-type: none;
   padding-left: 20px;
@@ -65,116 +78,9 @@ li {
   margin-bottom: 10px;
 }
 
-/* Navbar Styling */
-.navbar {
-  background-color: #333;
-  overflow: hidden;
-  padding: 10px 0;
-}
-
-.navbar a {
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 20px;
-  text-decoration: none;
-  transition: background-color 0.3s, color 0.3s;
-}
-
-.navbar a:hover {
-  background-color: #4CAF50;
-  color: #fff;
-}
-
-/* Search Form */
-.search-form {
-  float: right;
-  margin-top: 5px;
-}
-
-.search-form input[type="text"] {
-  padding: 8px;
-  margin-right: 10px;
-  border: none;
-  border-radius: 4px;
-}
-
-.search-form button {
-  padding: 8px 12px;
-  background-color: #4CAF50;
-  color: white;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-.search-form button:hover {
-  background-color: #45a049;
-}
-
-/* Project Styling */
-/* Project Styling */
-.project {
-  background-color: #383838; /* Slight contrast */
-  padding: 20px;
-  border-radius: 8px;
-  margin-bottom: 20px;
-  transition: background-color 0.3s, transform 0.3s;
-  display: flex; /* Use Flexbox for layout */
-  justify-content: space-between; /* Space between items */
-  align-items: center; /* Align items vertically centered */
-}
-
-.project:hover {
-  background-color: #444;
-  transform: scale(1.02); /* Slight zoom effect on hover */
-}
-
-.project h3 {
-  color: #4CAF50; /* Accent color for project titles */
-}
-
-.project p {
-  max-width: 60%; /* Limit paragraph width */
-  color: #fff; /* Text color for better readability */
-}
-
-.project-image {
-  max-width: 200px; /* Set maximum width for the image */
-  height: auto; /* Maintain aspect ratio */
-  margin-left: 20px; /* Space between text and image */
-}
-
-.names-column ul {
-  list-style-type: none; /* Remove bullet points */
-  padding: 0;
-  display: flex; /* Display items in a row */
-  gap: 20px; /* Add some spacing between the names */
-}
-
-.names-column ul li {
-  padding: 3px 20px;
-  border-radius: 30px; /* Make the border round */
-  border: 2px solid #ccc; /* Border around the name */
-  text-align: center;
-  margin-top: 10px;
-  
-}
-
-
-
-
-
-
-
-
-
-
-/* Footer Styling */
+/* Footer Styling -----------------------------------------------------------*/
 footer {
-  background-color: #222;
+  background-color: #222831;
   color: #ccc;
   text-align: center;
   padding: 15px 0;
@@ -196,7 +102,7 @@ footer p {
 }
 
 .social-icons a:hover {
-  transform: scale(1.2); /* Enlarges social icons on hover */
+  transform: scale(1.2);
 }
 
 .social-icons img {
@@ -204,12 +110,12 @@ footer p {
   height: 30px;
 }
 
-/* Scroll Indicator */
+/* Scroll Indicator ----------------------------------------------------------------*/
 .scroll-arrow {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  background-color: #4CAF50;
+  background-color: #4524ff;
   border-radius: 50%;
   width: 50px;
   height: 50px;
@@ -224,16 +130,16 @@ footer p {
 
 .scroll-arrow:hover {
   background-color: #45a049;
-  transform: scale(1.1); /* Slight zoom effect on hover */
+  transform: scale(1.1);
 }
 
-/* Responsive Design */
+/* Responsive Design -----------------------------------------------------------------*/
 @media (max-width: 768px) {
   .navbar a {
     float: none;
     width: 100%;
     text-align: left;
-    padding-left: 20px;
+    padding-left: 40px;
   }
 
   .search-form {
@@ -248,7 +154,7 @@ footer p {
     margin-bottom: 10px;
   }
 
-  /* Responsive scroll arrow */
+  /* Responsive scroll arrow ------------------------------------------------------------*/
   .scroll-arrow {
     width: 40px;
     height: 40px;
@@ -257,13 +163,13 @@ footer p {
   }
 }
 
-/* Improved readability for long text blocks */
+/* Improved readability for long text blocks --------------------------------------------*/
 .wordpad-container p {
   margin-bottom: 15px;
-  line-height: 1.8;
+  line-height: 1.6;
 }
 
-/* Styling for links */
+/* Styling for links ------------------------------------------------------------------*/
 a {
   color: #4CAF50;
   text-decoration: none;
@@ -271,31 +177,74 @@ a {
 }
 
 a:hover {
-  text-decoration: underline;
-  color: #45a049;
+  color: #81C784;
 }
 
-.container {
-  text-align: center;
-  margin-top: 40px;
+/* Project Section Styles ---------------------------------------------------------------*/
+.project-section {
+  margin: 30px ;
 }
 
-.container p {
-  color: #ccc;
-  margin-bottom: 10px;
+.project {
+  background-color: #000000; /* Slight contrast */
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  margin-right: -40px;
+  transition: background-color 0.3s, transform 0.3s;
+  display: flex; /* Use Flexbox for layout */
+  justify-content: space-between; /* Space between items */
+  align-items: center; /* Align items vertically centered */
 }
 
-.social-icons a {
-  margin: 0 10px;
-  display: inline-block;
-  transition: transform 0.3s;
+.project:hover {
+  background-color: #222831;
+  transform: scale(1.02); /* Slight zoom effect on hover */
 }
 
-.social-icons a:hover {
-  transform: scale(1.2); /* Enlarges social icons on hover */
+.project h3 {
+  color: #4CAF50; /* Accent color for project titles */
 }
 
-.social-icons img {
-  width: 30px;
-  height: 30px;
+.project p {
+  max-width: 60%; /* Limit paragraph width */
+  color: #fff; /* Text color for better readability */
+}
+
+.project-image {
+  max-width: 200px; /* Set maximum width for the image */
+  height: auto; /* Maintain aspect ratio */
+  margin-left: 20px; /* Space between text and image */
+}
+
+/* Responsive Design for Project Section -----------------------------------------------------------*/
+@media (max-width: 768px) {
+  .project {
+    flex-direction: column; /* Stack items vertically */
+    text-align: center; /* Center text */
+  }
+
+  .project-image {
+    margin-left: 0; /* Remove margin */
+    margin-top: 10px; /* Add space on top */
+    max-width: 100%; /* Full width on smaller screens */
+  }
+
+  .project p {
+    max-width: 100%; /* Allow text to take full width */
+  }
+}
+
+@media (max-width: 480px) {
+  .project h3 {
+    font-size: 20px; /* Adjust title size */
+  }
+
+  .project p {
+    font-size: 14px; /* Adjust paragraph size */
+  }
+
+  .project {
+    padding: 10px; /* Reduce padding for smaller screens */
+  }
 }
