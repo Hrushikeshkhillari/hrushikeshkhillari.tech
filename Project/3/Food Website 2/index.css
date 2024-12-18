@@ -168,7 +168,6 @@ ul button:hover {
     animation: fadeIn 1s ease;
 }
 
-
 .crd {
     display: flex;
     justify-content: center;
@@ -223,7 +222,6 @@ ul button:hover {
     cursor: pointer;
 
 }
-
 
 .bestCard {
     display: flex;
