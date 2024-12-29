@@ -1,0 +1,89 @@
+/* Vibrant and Colorful CSS */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(130deg, #fc5157, #f7d976 50%, #fc47c8);
+    color: #333;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.app-container {
+    width: 120%;
+    max-width: 700px;
+    background: linear-gradient(145deg, #ef99d3, #f3f4f6);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    border-radius: 12px;
+    padding: 25px;
+    text-align: center;
+}
+
+.headings-container h1 {
+    font-size: 2rem;
+    color: #1f1e1e;
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+.headings-container h3 {
+    font-size: 1.2rem;
+    color: #474747;
+    margin-bottom: 20px;
+}
+
+.interaction-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.text-control {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    color: #333;
+    resize: none;
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.text-control:focus {
+    border-color: #ff6f61;
+    outline: none;
+    background: rgba(255, 255, 255, 1);
+}
+
+.error-para {
+    color: #e63946;
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+}
+
+.btn {
+    padding: 12px 25px;
+    font-size: 1rem;
+    background: linear-gradient(120deg, #ff6f61, #ffa177);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.btn:hover {
+    background: linear-gradient(120deg, #ffa177, #ff6f61);
+    transform: scale(1.05);
+}
