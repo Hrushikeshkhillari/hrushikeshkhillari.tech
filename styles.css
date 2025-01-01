@@ -1,24 +1,22 @@
-/* Reset default browser styles -----------------------------------------*/
+/* Reset default browser styles ----------------------------------------- */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Body Styling -------------------------------------------------------*/
+/* Body Styling ------------------------------------------------------- */
 body {
   font-family: 'Arial', sans-serif;
   background-color: #222831;
   color: #ffffff;
-  margin: 0;
-  padding: 0;
   line-height: 1.6;
 }
 
-/* Container -----------------------------------------------------------*/
+/* Container ----------------------------------------------------------- */
 .wordpad-container {
   max-width: 1100px;
-  margin: auto auto ;
+  margin: auto;
   padding: 20px;
   background-color: #31363F;
   border-radius: 8px;
@@ -26,15 +24,15 @@ body {
   transition: background-color 0.3s ease;
 }
 
-/* Headers ---------------------------------------------------------------*/
+/* Headers --------------------------------------------------------------- */
 h1, h2, h3 {
   margin-bottom: 20px;
-  color: #40A2D8;
 }
 
 h1 {
   font-size: 48px;
   font-weight: bold;
+  color: #40A2D8;
   transition: transform 0.3s ease-in-out;
 }
 
@@ -52,11 +50,10 @@ h3 {
   color: #EEEEEE;
 }
 
-/* Date Styling for each section (top-right corner) -----------------------*/
+/* Date Styling for each section (top-right corner) ----------------------- */
 section {
   position: relative;
   margin-bottom: 30px;
-  padding-right: 50px;
 }
 
 .section-date {
@@ -68,7 +65,7 @@ section {
   font-style: italic;
 }
 
-/* Lists ------------------------------------------------------------------*/
+/* Lists ------------------------------------------------------------------ */
 ul {
   list-style-type: none;
   padding-left: 20px;
@@ -78,7 +75,7 @@ li {
   margin-bottom: 10px;
 }
 
-/* Footer Styling -----------------------------------------------------------*/
+/* Footer Styling ----------------------------------------------------------- */
 footer {
   background-color: #222831;
   color: #ccc;
@@ -110,7 +107,7 @@ footer p {
   height: 30px;
 }
 
-/* Scroll Indicator ----------------------------------------------------------------*/
+/* Scroll Indicator ---------------------------------------------------------------- */
 .scroll-arrow {
   position: fixed;
   bottom: 20px;
@@ -133,43 +130,13 @@ footer p {
   transform: scale(1.1);
 }
 
-/* Responsive Design -----------------------------------------------------------------*/
-@media (max-width: 768px) {
-  .navbar a {
-    float: none;
-    width: 100%;
-    text-align: left;
-    padding-left: 40px;
-  }
-
-  .search-form {
-    float: none;
-    text-align: left;
-    margin-top: 15px;
-  }
-
-  .search-form input[type="text"], .search-form button {
-    width: 100%;
-    margin-right: 0;
-    margin-bottom: 10px;
-  }
-
-  /* Responsive scroll arrow ------------------------------------------------------------*/
-  .scroll-arrow {
-    width: 40px;
-    height: 40px;
-    line-height: 40px;
-    font-size: 20px;
-  }
-}
-
-/* Improved readability for long text blocks --------------------------------------------*/
+/* Improved readability for long text blocks -------------------------------------------- */
 .wordpad-container p {
   margin-bottom: 15px;
   line-height: 1.6;
 }
 
-/* Styling for links ------------------------------------------------------------------*/
+/* Styling for links ------------------------------------------------------------------ */
 a {
   color: #4CAF50;
   text-decoration: none;
@@ -180,71 +147,112 @@ a:hover {
   color: #81C784;
 }
 
-/* Project Section Styles ---------------------------------------------------------------*/
-.project-section {
-  margin: 30px ;
+/* Project Section Styles --------------------------------------------------------------- */
+.projects {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin: 20px auto;
+  max-width: 100%;
 }
 
-.project {
-  background-color: #000000; /* Slight contrast */
-  padding: 20px;
+.project-card {
+  display: flex;
+  background-color: #2a2a2a;
+  border: 1px solid #444;
   border-radius: 8px;
-  margin-bottom: 20px;
-  margin-right: -40px;
-  transition: background-color 0.3s, transform 0.3s;
-  display: flex; /* Use Flexbox for layout */
-  justify-content: space-between; /* Space between items */
-  align-items: center; /* Align items vertically centered */
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.project:hover {
-  background-color: #222831;
-  transform: scale(1.02); /* Slight zoom effect on hover */
-}
-
-.project h3 {
-  color: #4CAF50; /* Accent color for project titles */
-}
-
-.project p {
-  max-width: 60%; /* Limit paragraph width */
-  color: #fff; /* Text color for better readability */
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
 
 .project-image {
-  max-width: 200px; /* Set maximum width for the image */
-  height: auto; /* Maintain aspect ratio */
-  margin-left: 20px; /* Space between text and image */
+  width: 280px;
+  height: auto;
+  object-fit: cover;
 }
 
-/* Responsive Design for Project Section -----------------------------------------------------------*/
+.project-content {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex-grow: 1;
+}
+
+.project-content h2 {
+  font-size: 1.5em;
+  margin: 0;
+  color: #f0f0f0;
+}
+
+.icons {
+  font-size: 1em;
+  color: #aaa;
+}
+
+.icons .icon-svg {
+  width: 30px; /* Set the desired width */
+  height: 30px; /* Set the desired height */
+  vertical-align: middle; /* Aligns the icons with text */
+  margin-bottom: 10px;
+  margin-left: 15px;
+  color: rgb(255, 255, 255);
+}
+
+
+.project-content p {
+  font-size: 1em;
+  margin: 0;
+  line-height: 1.5;
+  color: #ccc;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.tags span {
+  background-color: #444;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 0.9em;
+  color: #ddd;
+}
+
+/* Responsive Design for Project Section ----------------------------------------------------------- */
 @media (max-width: 768px) {
-  .project {
-    flex-direction: column; /* Stack items vertically */
-    text-align: center; /* Center text */
+  .project-card {
+    flex-direction: column;
+    text-align: center;
   }
 
   .project-image {
-    margin-left: 0; /* Remove margin */
-    margin-top: 10px; /* Add space on top */
-    max-width: 100%; /* Full width on smaller screens */
-  }
-
-  .project p {
-    max-width: 100%; /* Allow text to take full width */
+    width: 100%;
   }
 }
 
 @media (max-width: 480px) {
-  .project h3 {
-    font-size: 20px; /* Adjust title size */
+  h1 {
+    font-size: 36px;
   }
 
-  .project p {
-    font-size: 14px; /* Adjust paragraph size */
+  h2 {
+    font-size: 28px;
   }
 
-  .project {
-    padding: 10px; /* Reduce padding for smaller screens */
+  h3 {
+    font-size: 20px;
+  }
+
+  .project-content p {
+    font-size: 14px;
   }
 }
