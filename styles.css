@@ -71,6 +71,13 @@ ul {
   padding-left: 20px;
 }
 
+
+ul li::before {
+  content: " • ";
+  color: #ffffff;
+  margin-right: 10px;
+}
+
 li {
   margin-bottom: 10px;
 }
@@ -112,21 +119,21 @@ footer p {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  background-color: #4524ff;
+  background-color: #ffffff;
   border-radius: 50%;
   width: 50px;
   height: 50px;
   text-align: center;
   line-height: 50px;
   font-size: 24px;
-  color: white;
+  color: rgb(0, 0, 0);
   cursor: pointer;
   transition: background-color 0.3s, transform 0.3s;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .scroll-arrow:hover {
-  background-color: #45a049;
+  background-color: #4574a0;
   transform: scale(1.1);
 }
 
@@ -175,6 +182,8 @@ a:hover {
   width: 280px;
   height: auto;
   object-fit: cover;
+  border: 1px solid #ffffff;
+  border-radius: 8px;
 }
 
 .project-content {
